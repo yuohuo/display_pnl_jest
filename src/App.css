@@ -1,0 +1,175 @@
+/*--
+Author: Frank
+Date: 1/9/2017
+--*/
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+img{max-width:100%;}
+/*end reset*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(bg.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+table {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    margin-bottom: 0em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+table th,
+table td {
+    border: 0px solid #ccc;
+    padding: 5px 10px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+/**
+ * locate in the center of viewport
+ */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.row_order {
+    background: SteelBlue;
+    color: white;
+    text-align: center;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.row_name {
+    background: WhiteSmoke;
+    text-align: center;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.error-message {
+    background: SteelBlue;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*-- responsive --*/
+@media screen and (min-width: 1200px) {
+    table {
+        width: 50%;
+    }
+    .row_order {
+        letter-spacing: 5px;
+    }
+    .row_name {
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    table {
+        width: 50%;
+    }
+    .row_order {
+        letter-spacing: 4px;
+    }
+    .row_name {
+        letter-spacing: 3px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    table {
+        width: 50%;
+    }
+    .row_order {
+        letter-spacing: 3px;
+    }
+    .row_name {
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    table {
+        width: 50%;
+    }
+    table th,
+    table td {
+        padding: 5px 60px;
+    }
+    .row_order {
+        letter-spacing: 2px;
+        text-align: left;
+    }
+    .row_name {
+        letter-spacing: 1px;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    table {
+        width: 60%;
+    }
+    table th,
+    table td {
+        padding: 5px 40px;
+    }
+    .row_order {
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    .row_name {
+        letter-spacing: 0px;
+        text-align: right;
+    }
+}
+
+
+
+
+
+/*-- //responsive --*/
